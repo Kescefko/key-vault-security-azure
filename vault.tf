@@ -5,5 +5,5 @@ resource "azurerm_key_vault" "vault" {
   tenant_id = data.azurerm_client_config.current.tenant_id
 
   enable_rbac_authorization = true
-  sku_name = "Standard"
+  sku_name = "standard"
 }
