@@ -1,6 +1,6 @@
 resource "azurerm_key_vault_certificate" "self_signed_cert" {
   name         = "self-signed-cert"
-  key_vault_id = azurerm_key_vault.vault
+  key_vault_id = azurerm_key_vault.vault.id
 
   certificate_policy {
     issuer_parameters {
